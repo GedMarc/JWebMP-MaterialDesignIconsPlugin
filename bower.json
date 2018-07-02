@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-  "material-design-icons":"*"
+    "material-design-icons": "*",
+    "mdi": "^2.4.85"
   }
 }
