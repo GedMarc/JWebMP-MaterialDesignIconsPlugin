@@ -8,7 +8,8 @@ public enum MaterialDesignIconColours
 		implements ICSSClassName
 {
 	Dark("md-light"),
-	Light("md-dark"),;
+	Light("md-dark"),
+	;
 	private String value;
 
 	MaterialDesignIconColours(String value)

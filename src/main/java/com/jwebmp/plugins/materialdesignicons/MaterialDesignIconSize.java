@@ -10,7 +10,8 @@ public enum MaterialDesignIconSize
 	$18,
 	$24,
 	$36,
-	$48,;
+	$48,
+	;
 
 	@Override
 	public String toString()
