@@ -16,8 +16,8 @@
  */
 package com.jwebmp.plugins.materialdesignicons;
 
-import com.jwebmp.base.interfaces.ICSSClassName;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.interfaces.ICSSClassName;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * A list of all the ion icons that are available

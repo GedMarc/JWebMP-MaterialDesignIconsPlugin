@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.materialdesignicons;
 
-import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.core.base.references.CSSReference;
 
 /**
  * The MaterialDesignIcons CSS Reference

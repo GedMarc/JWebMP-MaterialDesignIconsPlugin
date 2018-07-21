@@ -1,6 +1,6 @@
 package com.jwebmp.plugins.materialdesignicons;
 
-import com.jwebmp.base.html.Italic;
+import com.jwebmp.core.base.html.Italic;
 
 public class MaterialDesignIcon
 		extends Italic<MaterialDesignIcon>
