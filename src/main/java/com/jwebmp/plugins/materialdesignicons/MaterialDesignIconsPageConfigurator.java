@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.materialdesignicons;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author GedMarc
@@ -41,10 +41,8 @@ import com.jwebmp.core.plugins.PluginInformation;
 		pluginLastUpdatedDate = "2018/06/26")
 @SuppressWarnings("unused")
 public class MaterialDesignIconsPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
 	private static final MaterialDesignIconsCSSReference reference = new MaterialDesignIconsCSSReference();
 
 	/**
