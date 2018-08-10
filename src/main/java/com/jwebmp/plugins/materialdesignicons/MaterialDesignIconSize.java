@@ -1,11 +1,11 @@
 package com.jwebmp.plugins.materialdesignicons;
 
-import com.jwebmp.core.base.interfaces.ICSSClassName;
+import com.jwebmp.core.base.interfaces.ICssClassName;
 
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
 public enum MaterialDesignIconSize
-		implements ICSSClassName
+		implements ICssClassName
 {
 	$18,
 	$24,

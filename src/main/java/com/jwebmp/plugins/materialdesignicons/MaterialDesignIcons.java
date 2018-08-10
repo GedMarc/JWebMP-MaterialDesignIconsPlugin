@@ -16,7 +16,7 @@
  */
 package com.jwebmp.plugins.materialdesignicons;
 
-import com.jwebmp.core.base.interfaces.ICSSClassName;
+import com.jwebmp.core.base.interfaces.ICssClassName;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
@@ -29,7 +29,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 		description = "Material design icons is the official icon set from Google. The icons are designed under the material design guidelines.",
 		url = "https://google.github.io/material-design-icons/")
 public enum MaterialDesignIcons
-		implements ICSSClassName
+		implements ICssClassName
 {
 	$3d_rotation,
 	ac_unit,

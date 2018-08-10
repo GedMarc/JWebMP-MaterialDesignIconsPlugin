@@ -1,11 +1,11 @@
 package com.jwebmp.plugins.materialdesignicons;
 
-import com.jwebmp.core.base.interfaces.ICSSClassName;
+import com.jwebmp.core.base.interfaces.ICssClassName;
 
 import static com.jwebmp.core.utilities.StaticStrings.*;
 
 public enum MaterialDesignIconColours
-		implements ICSSClassName
+		implements ICssClassName
 {
 	Dark("md-light"),
 	Light("md-dark"),
