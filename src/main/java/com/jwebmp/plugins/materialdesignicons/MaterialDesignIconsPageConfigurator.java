@@ -46,6 +46,10 @@ public class MaterialDesignIconsPageConfigurator
 		implements IPageConfigurator
 {
 	private static final MaterialDesignIconsCSSReference reference = new MaterialDesignIconsCSSReference();
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
 
 	/**
 	 * A new instance of the page configurator
@@ -56,13 +60,38 @@ public class MaterialDesignIconsPageConfigurator
 	}
 
 	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return MaterialDesignIconsPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		MaterialDesignIconsPageConfigurator.enabled = mustEnable;
+	}
+
+	/**
 	 * Get the reference
 	 *
 	 * @return
 	 */
 	public static MaterialDesignIconsCSSReference getReference()
 	{
-		return reference;
+		return MaterialDesignIconsPageConfigurator.reference;
 	}
 
 	@NotNull
@@ -72,8 +101,14 @@ public class MaterialDesignIconsPageConfigurator
 		if (!page.isConfigured())
 		{
 			page.getBody()
-			    .addCssReference(reference);
+			    .addCssReference(MaterialDesignIconsPageConfigurator.reference);
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return MaterialDesignIconsPageConfigurator.enabled;
 	}
 }
