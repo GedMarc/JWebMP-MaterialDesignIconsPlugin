@@ -43,7 +43,7 @@ import javax.validation.constraints.NotNull;
 		pluginLastUpdatedDate = "2018/06/26")
 @SuppressWarnings("unused")
 public class MaterialDesignIconsPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<MaterialDesignIconsPageConfigurator>
 {
 	private static final MaterialDesignIconsCSSReference reference = new MaterialDesignIconsCSSReference();
 	/**
