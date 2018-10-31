@@ -28,7 +28,6 @@ public class MaterialDesignIconsCSSReference
 		extends CSSReference
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public MaterialDesignIconsCSSReference()
 	{
