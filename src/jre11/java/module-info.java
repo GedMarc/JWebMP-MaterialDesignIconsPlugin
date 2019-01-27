@@ -1,8 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.materialdesignicons.MaterialDesignIconsPageConfigurator;
-
 module com.jwebmp.plugins.materialdesignicons {
 
 	exports com.jwebmp.plugins.materialdesignicons;
@@ -15,10 +10,10 @@ module com.jwebmp.plugins.materialdesignicons {
 	requires java.logging;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with MaterialDesignIconsPageConfigurator;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.materialdesignicons.MaterialDesignIconsPageConfigurator;
 
-	provides IGuiceScanJarExclusions with com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsExclusionsModule;
-	provides IGuiceScanModuleExclusions with com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.materialdesignicons.implementations.MaterialDesignIconsExclusionsModule;
 
 	opens com.jwebmp.plugins.materialdesignicons to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
