@@ -53,6 +53,10 @@ public class MaterialDesignIcon
 			{
 				addClass("md-inactive");
 			}
+			if (icon == null)
+			{
+				icon = MaterialDesignIcons.question_answer;
+			}
 			setText(icon.toString());
 		}
 		super.preConfigure();
