@@ -1,9 +1,12 @@
 package com.jwebmp.plugins.materialdesignicons;
 
+import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.html.Italic;
+import com.jwebmp.core.base.interfaces.IIcon;
 
 public class MaterialDesignIcon
 		extends Italic<MaterialDesignIcon>
+		implements IIcon<MaterialDesignIcon>
 {
 	private MaterialDesignIconThemes theme;
 	private MaterialDesignIcons icon;
@@ -114,6 +117,18 @@ public class MaterialDesignIcon
 	public MaterialDesignIcon setInactive(boolean inactive)
 	{
 		this.inactive = inactive;
+		return this;
+	}
+
+	@Override
+	public String getClassName()
+	{
+		return "material-icons " + colour + " " + size + " " + theme + (inactive ? "inactive" : "") + icon.toString();
+	}
+
+	@Override
+	public ComponentHierarchyBase getIconComponent()
+	{
 		return this;
 	}
 }
