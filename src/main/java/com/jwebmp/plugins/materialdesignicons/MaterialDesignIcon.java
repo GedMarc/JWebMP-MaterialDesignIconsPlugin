@@ -3,10 +3,11 @@ package com.jwebmp.plugins.materialdesignicons;
 import com.jwebmp.core.base.ComponentHierarchyBase;
 import com.jwebmp.core.base.html.Italic;
 import com.jwebmp.core.base.interfaces.IIcon;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 
 public class MaterialDesignIcon
 		extends Italic<MaterialDesignIcon>
-		implements IIcon<MaterialDesignIcon>
+		implements IIcon<IComponentHierarchyBase, MaterialDesignIcon>
 {
 	private MaterialDesignIconThemes theme;
 	private MaterialDesignIcons icon;
