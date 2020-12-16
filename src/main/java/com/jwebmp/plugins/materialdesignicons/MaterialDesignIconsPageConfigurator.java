@@ -18,6 +18,7 @@ package com.jwebmp.plugins.materialdesignicons;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -37,10 +38,15 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "https://google.github.io/material-design-icons",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-MaterialDesignIconsPlugin/wiki",
 		pluginOriginalHomepage = "https://google.github.io/material-design-icons/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/MaterialDesignIcons.jar/download",
-		pluginIconUrl = "https://material.io/tools/icons/static/ic_material_192px_light.svg",
-		pluginIconImageUrl = "https://google.github.io/material-design-icons/www/images/icons-library.png",
-		pluginLastUpdatedDate = "2018/06/26")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.iconsets/jwebmp-material-design-icons",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2018/06/26",
+		pluginGroupId = "com.jwebmp.plugins.iconsets",
+		pluginArtifactId = "jwebmp-material-design-icons",
+		pluginModuleName = "com.jwebmp.plugins.materialdesignicons",
+		pluginStatus = PluginStatus.Released
+)
 @SuppressWarnings("unused")
 public class MaterialDesignIconsPageConfigurator
 		implements IPageConfigurator<MaterialDesignIconsPageConfigurator>
@@ -50,7 +56,7 @@ public class MaterialDesignIconsPageConfigurator
 	 * If this configurator is enabled
 	 */
 	private static boolean enabled = true;
-
+	
 	/**
 	 * A new instance of the page configurator
 	 */
@@ -58,7 +64,7 @@ public class MaterialDesignIconsPageConfigurator
 	{
 		//No config needed
 	}
-
+	
 	/**
 	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
@@ -70,20 +76,19 @@ public class MaterialDesignIconsPageConfigurator
 	{
 		return MaterialDesignIconsPageConfigurator.enabled;
 	}
-
+	
 	/**
 	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
 	 * If this configurator is enabled
 	 *
-	 * @param mustEnable
-	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * @param mustEnable the enabled of this AngularAnimatedChangePageConfigurator object.
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
 		MaterialDesignIconsPageConfigurator.enabled = mustEnable;
 	}
-
+	
 	/**
 	 * Get the reference
 	 *
@@ -93,7 +98,7 @@ public class MaterialDesignIconsPageConfigurator
 	{
 		return MaterialDesignIconsPageConfigurator.reference;
 	}
-
+	
 	@NotNull
 	@Override
 	public Page configure(Page page)
@@ -105,7 +110,7 @@ public class MaterialDesignIconsPageConfigurator
 		}
 		return page;
 	}
-
+	
 	@Override
 	public boolean enabled()
 	{

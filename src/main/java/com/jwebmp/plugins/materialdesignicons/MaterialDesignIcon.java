@@ -7,7 +7,7 @@ import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 
 public class MaterialDesignIcon
 		extends Italic<MaterialDesignIcon>
-		implements IIcon<IComponentHierarchyBase, MaterialDesignIcon>
+		implements IIcon<IComponentHierarchyBase<?,?>, MaterialDesignIcon>
 {
 	private MaterialDesignIconThemes theme;
 	private MaterialDesignIcons icon;
@@ -128,7 +128,7 @@ public class MaterialDesignIcon
 	}
 
 	@Override
-	public ComponentHierarchyBase getIconComponent()
+	public IComponentHierarchyBase<?,?> getIconComponent()
 	{
 		return this;
 	}
